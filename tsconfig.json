@@ -2,7 +2,8 @@
   "compilerOptions": {
     /* Basic Options */
     "target": "esnext",                      // Specify ECMAScript target version
-    "module": "esnext",                      // Specify module code generation
+    "module": "esnext",   
+    "types": ["node"],                   // Specify module code generation
     "moduleResolution": "node",             // Use Node.js module resolution
     "lib": ["esnext", "dom"],                // Specify library files to include
     "jsx": "react-jsx",                      // Specify JSX code generation
