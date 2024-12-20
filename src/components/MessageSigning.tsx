@@ -41,7 +41,7 @@ export default function MessageSigning() {
       // Store the signed message
       addSignedMessage({
         message,
-        signature,
+        signature: signature.toString(),
         publicKey: keyPair.publicKey,
         timestamp: Date.now(),
       });

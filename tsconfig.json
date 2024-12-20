@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "esnext",                      // Specify ECMAScript target version
+    "module": "esnext",                      // Specify module code generation
+    "moduleResolution": "node",             // Use Node.js module resolution
+    "lib": ["esnext", "dom"],                // Specify library files to include
+    "jsx": "react-jsx",                      // Specify JSX code generation
+
+    /* Strict Type-Checking Options */
+    "strict": true,                          // Enable all strict type-checking options
+    "noImplicitAny": true,                   // Raise error on expressions with an implied `any` type
+    "strictNullChecks": true,                // Enable strict null checks
+    "strictFunctionTypes": true,             // Enable strict checking of function types
+    "strictBindCallApply": true,             // Enable strict checking of `bind`, `call`, and `apply` methods
+    "noImplicitThis": true,                  // Raise error on `this` expressions with an implied `any` type
+    "alwaysStrict": true,                    // Parse in strict mode and emit `"use strict"` for each source file
+
+    /* Module Resolution Options */
+    "esModuleInterop": true,                 // Emit additional code to ease CommonJS interop
+    "allowSyntheticDefaultImports": true,    // Allow default imports from modules with no default export
+    "baseUrl": "./",                         // Base directory for non-relative module names
+    "paths": {                               // Path mapping
+      "@/*": ["src/*"]
+    },
+
+    /* Output Options */
+    "outDir": "./dist",                      // Redirect output structure to the `dist` directory
+    "removeComments": true,                  // Do not emit comments in output
+
+    /* Source Map Options */
+    "sourceMap": true,                       // Generate source map files
+
+    /* Include JavaScript Files */
+    "allowJs": true,                         // Allow JavaScript files to be compiled
+    "checkJs": false,                        // Disable type-checking in JavaScript files
+
+    /* Skip Type Checking for Node Modules */
+    "skipLibCheck": true,                    // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true // Ensure consistent file casing
+  },
+  "include": ["src/**/*"],                   // Files or directories to include in the program
+  "exclude": ["node_modules", "dist"]        // Files or directories to exclude from the program
+}

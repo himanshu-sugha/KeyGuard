@@ -1,5 +1,5 @@
 import CryptoJS from 'crypto-js';
-import { KeyPair, SignedMessage } from '../types/keys';
+import { KeyPair, SignedMessage } from '../types/key';
 
 // Mock Key Generation
 export async function generateKeyPair(): Promise<KeyPair> {
@@ -9,7 +9,10 @@ export async function generateKeyPair(): Promise<KeyPair> {
   
   return {
     publicKey: mockPublicKey,
-    privateKey: mockPrivateKey
+    privateKey: mockPrivateKey,
+    label: 'mock-label',
+    id: CryptoJS.lib.WordArray.random(16).toString(),
+    createdAt: Date.now()
   };
 }
 
@@ -21,7 +24,8 @@ export async function signMessage(message: string, privateKey: string): Promise<
   return {
     message,
     signature: mockSignature,
-    publicKey: 'mock-public-key'
+    publicKey: 'mock-public-key',
+    timestamp: Date.now()
   };
 }
 
