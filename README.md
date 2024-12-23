@@ -75,9 +75,18 @@ Our tool enhances the A-MACI experience by giving users secure and intuitive con
 - [Github](https://github.com/himanshu-sugha/KeyGuard)
 - [Demo Video](https://youtu.be/5d3tzSc6s2I?si=-tQPTg_tDW2CzxWP)
 - [Site](https://keyguarfd.netlify.app/)  
+
 ## Getting Started
+
 ### Installation
-Clone the repository:
-```bash
-git clone https://github.com/your-repository/a-maci-key-manager.git
-cd a-maci-key-manager
+Follow these steps to set up and run the project:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repository/KeyGuard.git
+   cd KeyGuard.git
+   npm install
+   npm start
+2.Access the application in your browser: at http://localhost:3000
+
+
