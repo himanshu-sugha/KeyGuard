@@ -99,7 +99,7 @@ Follow these steps to set up and run the project:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repository/KeyGuard.git
+   https://github.com/himanshu-sugha/KeyGuard.git
    cd KeyGuard
    ```
 2.Install dependencies:
